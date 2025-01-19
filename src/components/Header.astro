@@ -1,0 +1,31 @@
+---
+import '../styles/header.css';
+import '../styles/global.css';
+
+import Timer from './Timer.astro';
+---
+
+<header class="header">
+    <div class="header-container">
+        <div class="header-content">
+            <!-- Timer -->
+            <div class="timer">
+                <Timer client:load />
+            </div>
+
+            <!-- Icône -->
+            <div class="icon">
+                <img src="icons/icon-header-lavender.png" alt="lavender-icon" class="icon"/>
+            </div>
+
+            <!-- Sélecteur de langue -->
+            <a href="#" class="lang-switch">Switch to English</a>
+        </div>
+    </div>
+</header>
+
+<script>
+    import { initLanguageSwitch } from '../scripts/setupLanguage.js';
+    // On initialise le switch de langue quand le composant est monté
+    initLanguageSwitch();
+</script>

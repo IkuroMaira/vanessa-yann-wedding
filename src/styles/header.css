@@ -1,0 +1,113 @@
+.header {
+    background-color: #FCF5EB;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    width: 100%;
+}
+
+.header-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.header-content {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.timer {
+    color: #9174AC;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.countdown-item {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.countdown-number {
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: 1;
+    margin-right: 4px;
+}
+
+.countdown-label {
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    text-transform: uppercase;
+}
+
+.icon {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.lang-switch {
+    color: #9174AC;
+    transition: color 0.2s ease;
+    padding: 0.5rem;
+    text-decoration: none}
+
+.lang-switch:hover {
+    color: rgb(17, 24, 39);
+}
+
+/* Mobile (moins de 640px) */
+@media screen and (max-width: 639px) {
+    .header-container {
+        padding: 0 0.5rem;
+    }
+
+    .header-content {
+        height: 3.5rem;
+    }
+
+    .timer {
+        font-size: 1rem;
+    }
+
+    .icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .lang-switch {
+        font-size: 0.875rem;
+    }
+}
+
+/* Tablette (640px à 1023px) */
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+    .header-container {
+        padding: 0 1.5rem;
+    }
+}
+
+/* Grand écran (1024px et plus) */
+@media screen and (min-width: 1024px) {
+    .header-container {
+        padding: 0 2rem;
+    }
+}
+
+/* Pour éviter les chevauchements sur très petits écrans */
+@media screen and (max-width: 359px) {
+    .header-content {
+        gap: 0.5rem;
+    }
+
+    .timer {
+        font-size: 0.875rem;
+    }
+
+    .icon {
+        width: 18px;
+        height: 18px;
+    }
+}
