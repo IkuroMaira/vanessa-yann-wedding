@@ -3,28 +3,24 @@ import '../styles/header.css';
 import '../styles/global.css';
 
 import Timer from './Timer.astro';
+import SetupLanguage from './SetupLanguage.astro'
 ---
 
 <header class="header">
     <div class="header-container">
         <div class="header-content">
             <div class="timer">
-                <Timer client:load />
+                <Timer />
             </div>
 
             <div class="icon">
                 <img src="icons/icon-header-lavender.png" alt="lavender-icon" class="icon"/>
             </div>
 
-            <button class="lang-switch" id=""></button>
+           <div class="lang-switch">
+                <SetupLanguage />
+           </div>
         </div>
     </div>
 </header>
 
-<script>
-    import { initLanguageSwitch } from "../scripts/setupLanguage.js";
-
-    document.addEventListener('DOMContentLoaded', () => {
-        initLanguageSwitch();
-    });
-</script>

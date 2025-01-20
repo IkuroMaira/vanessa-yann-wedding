@@ -50,7 +50,7 @@
     max-height: 50px;
 }
 
-.lang-switch {
+#lang-switch {
     color: #9174AC;
     transition: color 0.2s ease;
     padding: 0.5rem;
@@ -59,7 +59,7 @@
     font-family: "Playfair Display", serif;
 }
 
-.lang-switch:hover {
+#lang-switch:hover {
     color: rgb(17, 24, 39);
 }
 
@@ -82,7 +82,7 @@
         height: 20px;
     }
 
-    .lang-switch {
+    #lang-switch {
         font-size: 0.875rem;
     }
 }
@@ -104,7 +104,7 @@
         font-size: 1.5rem;
     }
 
-    .lang-switch {
+    #lang-switch {
         font-size: 1rem;
     }
 }

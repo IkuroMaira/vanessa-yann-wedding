@@ -8,7 +8,7 @@ export const translations = {
                 date: "date"
             },
             weddingInfo: {
-                line1: "Pour la mariage",
+                line1: "Pour le mariage",
                 line2: "Vanessa & Yann",
                 weddingDate: "Le 26 juillet 2025,",
                 location: "à Gréoux-Les-Bains"
@@ -32,7 +32,7 @@ export const translations = {
             },
             weddingInfo: {
                 line1: "test en anglais",
-                line2: "",
+                line2: "Vannessa & Yann",
                 date: "",
                 location: ""
             },

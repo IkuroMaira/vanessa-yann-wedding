@@ -1,0 +1,126 @@
+---
+
+---
+<button id="lang-switch">Hey</button>
+
+<script>
+    import { translations } from '../datas/translations.js';
+
+    let currentLang = localStorage.getItem('preferredLanguage') || 'fr';
+    console.log(currentLang);
+
+    const langBtn = document.querySelector('#lang-switch');
+    // console.log(langBtn);
+
+    function updateButtonText() {
+        const targetLang = currentLang === 'fr' ? `${translations.en[0].buttonText}` : `${translations.fr[0].buttonText}`;
+        langBtn.textContent = `${targetLang}`;
+        console.log(targetLang);
+    }
+
+    function updateTextPage(language) {
+        if (language === 'fr') {
+            console.log("On change la langue en français !", language);
+            console.log(translations.fr[0].buttonText);
+
+            document.getElementById('save').textContent = translations.fr[0].title.save;
+            document.getElementById('the').textContent = translations.fr[0].title.the;
+            document.getElementById('date').textContent = translations.fr[0].title.date;
+            document.getElementById('line1').textContent = translations.fr[0].weddingInfo.line1;
+            document.getElementById('line2').textContent = translations.fr[0].weddingInfo.line2;
+            document.getElementById('wedding-date').textContent = translations.fr[0].weddingInfo.weddingDate;
+            document.getElementById('location').textContent = translations.fr[0].weddingInfo.location;
+            document.getElementById('paragraph1').textContent = translations.fr[0].invitationText.paragraph1;
+            document.getElementById('paragraph2').textContent = translations.fr[0].invitationText.paragraph2;
+            document.getElementById('text-form').textContent = translations.fr[0].formReminder.text;
+        } else if (language === 'en') {
+            document.getElementById('save').textContent = translations.en[0].title.save;
+            document.getElementById('the').textContent = translations.en[0].title.the;
+            document.getElementById('date').textContent = translations.en[0].title.date;
+            document.getElementById('line1').textContent = translations.en[0].weddingInfo.line1;
+            document.getElementById('line2').textContent = translations.en[0].weddingInfo.line2;
+            document.getElementById('wedding-date').textContent = translations.en[0].weddingInfo.weddingDate;
+            document.getElementById('location').textContent = translations.en[0].weddingInfo.location;
+            document.getElementById('paragraph1').textContent = translations.en[0].invitationText.paragraph1;
+            document.getElementById('paragraph2').textContent = translations.en[0].invitationText.paragraph2;
+            document.getElementById('text-form').textContent = translations.en[0].formReminder.text;
+        }
+    }
+
+    function initializeLanguage() {
+        updateButtonText();
+        updateTextPage(currentLang);
+    }
+
+    document.addEventListener('DOMContentLoaded', initializeLanguage);
+
+    langBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        currentLang = currentLang === 'fr' ? 'en' : 'fr';
+
+        localStorage.setItem('preferredLanguage', currentLang);
+
+        updateButtonText();
+        updateTextPage(currentLang);
+    });
+</script>
+
+<!--let currentLang = localStorage.getItem('preferredLanguage') || 'fr';-->
+<!--console.log(currentLang)-->
+
+<!--const langBtn = document.querySelector('#lang-switch');-->
+<!--console.log(langBtn);-->
+
+<!--function updateButtonText() {-->
+<!--    const targetLang = currentLang === 'fr' ? `${translations.en[0].buttonText}` : `${translations.fr[0].buttonText}`;-->
+<!--    langBtn.textContent = `${targetLang}`;-->
+<!--    console.log(targetLang);-->
+<!--    }-->
+
+<!--function updateTextPage(language) {-->
+<!--    if (language === 'fr') {-->
+<!--    console.log("On change la langue en français !", language);-->
+<!--    console.log(translations.fr[0].buttonText);-->
+
+<!--    document.getElementById('save').textContent = translations.fr[0].title.save;-->
+<!--    document.getElementById('the').textContent = translations.fr[0].title.the;-->
+<!--    document.getElementById('date').textContent = translations.fr[0].title.date;-->
+<!--    document.getElementById('line1').textContent = translations.fr[0].weddingInfo.line1;-->
+<!--    document.getElementById('line2').textContent = translations.fr[0].weddingInfo.line2;-->
+<!--    document.getElementById('wedding-date').textContent = translations.fr[0].weddingInfo.weddingDate;-->
+<!--    document.getElementById('location').textContent = translations.fr[0].weddingInfo.location;-->
+<!--    document.getElementById('paragraph1').textContent = translations.fr[0].invitationText.paragraph1;-->
+<!--    document.getElementById('paragraph2').textContent = translations.fr[0].invitationText.paragraph2;-->
+<!--    document.getElementById('text-form').textContent = translations.fr[0].formReminder.text;-->
+<!--    } else if (language === 'en') {-->
+<!--    document.getElementById('save').textContent = translations.en[0].title.save;-->
+<!--    document.getElementById('the').textContent = translations.en[0].title.the;-->
+<!--    document.getElementById('date').textContent = translations.en[0].title.date;-->
+<!--    document.getElementById('line1').textContent = translations.en[0].weddingInfo.line1;-->
+<!--    document.getElementById('line2').textContent = translations.en[0].weddingInfo.line2;-->
+<!--    document.getElementById('wedding-date').textContent = translations.en[0].weddingInfo.weddingDate;-->
+<!--    document.getElementById('location').textContent = translations.en[0].weddingInfo.location;-->
+<!--    document.getElementById('paragraph1').textContent = translations.en[0].invitationText.paragraph1;-->
+<!--    document.getElementById('paragraph2').textContent = translations.en[0].invitationText.paragraph2;-->
+<!--    document.getElementById('text-form').textContent = translations.en[0].formReminder.text;-->
+<!--    }-->
+<!--    }-->
+
+<!--function initializeLanguage() {-->
+<!--    // updateButtonText();-->
+<!--        // updateTextPage(currentLang);-->
+<!--    }-->
+
+<!--document.addEventListener('DOMContentLoaded', initializeLanguage);-->
+
+<!--langBtn.addEventListener('click', (e) => {-->
+<!--    e.preventDefault();-->
+
+<!--    currentLang = currentLang === 'fr' ? 'en' : 'fr';-->
+
+<!--    localStorage.setItem('preferredLanguage', currentLang);-->
+
+<!--    updateButtonText();-->
+<!--    updateTextPage(currentLang);-->
+<!--    });-->
