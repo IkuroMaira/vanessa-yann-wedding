@@ -1,10 +1,10 @@
 import { languages } from '../datas/language.js';
 
-// Vous pouvez accéder aux thèmes en français
+// Accés à la version en français
 const translateFR = languages.fr;
 console.log(translateFR);
 
-// Ou aux thèmes en anglais
+// Accés à la version en anglais
 const translateEN = languages.en;
 // console.log(translateEN);
 
@@ -16,7 +16,6 @@ export function initLanguageSwitch(languages) {
 
     langLink.addEventListener('click', (e) => {
         e.preventDefault();
-        // Ici votre logique pour changer de langue
         console.log('Changement de langue');
     });
 }
