@@ -2,6 +2,7 @@
     background-color: #FCF5EB;
     box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
     width: 100%;
+    padding: 0.5em;
 }
 
 .header-container {
@@ -22,16 +23,17 @@
     display: flex;
     gap: 2rem;
     align-items: center;
+    font-family: "Playfair Display", serif;
 }
 
 .countdown-item {
     display: flex;
     align-items: center;
     text-align: center;
+    margin: 0.3em;
 }
 
 .countdown-number {
-    font-size: 1.75rem;
     font-weight: 600;
     line-height: 1;
     margin-right: 4px;
@@ -52,7 +54,10 @@
     color: #9174AC;
     transition: color 0.2s ease;
     padding: 0.5rem;
-    text-decoration: none}
+    border: none;
+    background: none;
+    font-family: "Playfair Display", serif;
+}
 
 .lang-switch:hover {
     color: rgb(17, 24, 39);
@@ -93,6 +98,14 @@
 @media screen and (min-width: 1024px) {
     .header-container {
         padding: 0 2rem;
+    }
+
+    .countdown-item {
+        font-size: 1.5rem;
+    }
+
+    .lang-switch {
+        font-size: 1rem;
     }
 }
 

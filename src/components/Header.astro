@@ -9,20 +9,22 @@ import Timer from './Timer.astro';
     <div class="header-container">
         <div class="header-content">
             <div class="timer">
-                <!--<Timer client:load />-->
+                <Timer client:load />
             </div>
 
             <div class="icon">
                 <img src="icons/icon-header-lavender.png" alt="lavender-icon" class="icon"/>
             </div>
 
-            <a href="#" class="lang-switch">Switch to English</a>
+            <button class="lang-switch" id=""></button>
         </div>
     </div>
 </header>
 
 <script>
-    import { initLanguageSwitch } from '../scripts/setupLanguage.js';
-    // On initialise le switch de langue
-    initLanguageSwitch();
+    import { initLanguageSwitch } from "../scripts/setupLanguage.js";
+
+    document.addEventListener('DOMContentLoaded', () => {
+        initLanguageSwitch();
+    });
 </script>
