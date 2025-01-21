@@ -18,8 +18,8 @@ export const translations = {
                 paragraph2: "Les informations complémentaires suivront bientôt."
             },
             formReminder: {
-                text: "Pensez à remplir le formulaire."
-            }
+                text: "Pensez à remplir le formulaire.",
+            },
         },
     ],
     en: [
@@ -33,7 +33,7 @@ export const translations = {
             weddingInfo: {
                 line1: "test en anglais",
                 line2: "Vannessa & Yann",
-                date: "",
+                weddingDate: "",
                 location: ""
             },
             invitationText: {
@@ -41,7 +41,7 @@ export const translations = {
                 paragraph2: ""
             },
             formReminder: {
-                text: ""
+                text: "",
             }
         },
     ]
