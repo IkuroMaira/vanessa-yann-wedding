@@ -1,67 +1,84 @@
-.save-the-date-container {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    background-color: #FCF5EB;
-    overflow: hidden;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.cover-image {
+body, html {
+    overflow-x: hidden;
+}
+
+.content-background {
+    background: no-repeat url("./background/lavender-background.png");
+    background-size: cover;
+    filter: brightness(0.90);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-background::before {
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    object-fit: cover;
+    height: 100%;
+    background-color: rgba(250, 249, 249, 0.25);
     filter: brightness(0.90);
 }
 
-.content {
+#cover-image {
     position: relative;
     z-index: 1;
+    color: white;
     padding: 2rem;
-    text-align: center;
-    height: 1800px;
 }
 
 .title {
-    margin-top: 5rem;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3.5rem;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    align-items: center;
 }
 
 .save {
     font-family: "Mrs Saint Delafield", serif;
     color: #2C1343;
-    font-size: 12rem;
-    line-height: 1;
-    position: absolute;
-    left: 420px;
-    top: 80px;
+    line-height: 0.7;
 }
 
 .the {
     font-family: 'Playfair Display', serif;
     color: #FA640E;
-    font-size: 5rem;
-    /*margin: 0 1rem;*/
-    position: absolute;
-    top: 180px;
-    left: 700px;
+    font-size: 3.8rem;
+    line-height: 0.9;
+    transform: translateY(-2.5rem) translateX(-0.5rem);
 }
 
 .date {
     font-family: "Mrs Saint Delafield", serif;
     color: #2C1343;
-    font-size: 12rem;
-    line-height: 1;
-    position: absolute;
-    right: 450px;
-    top :190px;
+    line-height: 0.9;
+    transform: translateY(-3rem);
+}
+
+.save, .date {
+    font-size: 10rem;
 }
 
 .wedding-info {
-    margin: 22rem 0;
-    font-family: 'Playfair Display', serif;
     color: #FCF5EB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
 }
 
 .pour-le-mariage {
@@ -71,9 +88,10 @@
     margin-bottom: 1rem;
 }
 
-.names {
-    font-size: 4.5rem;
+#paragraph-v, #paragraph-et, #paragraph-y {
+    font-size: 3.5rem;
     margin: 1rem 0;
+    font-family: 'Playfair Display', serif;
 }
 
 .wedding-date {
@@ -85,7 +103,21 @@
 .location {
     font-family: "Italianno", serif;;
     font-style: italic;
-    font-size: 3.5rem;
+    font-size: 3rem;
+}
+
+.polaroid-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FCF5EB;
+
+    /*position: relative;*/
+    /*z-index: 1;*/
+    width: 100%;
+    /*min-height: 200vh;*/
+    padding: 2rem;
 }
 
 .polaroids {
@@ -93,7 +125,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
-    margin: 3rem 0;
+    /*margin: 3rem 0;*/
 }
 
 .polaroid {
@@ -104,34 +136,6 @@
     /*transition: transform 0.3s ease;*/
     transition: all 0.3s ease;
     animation: float 4s ease-in-out infinite;
-    transform: rotate(1deg);
-}
-
-.polaroid:hover {
-    transform: scale(1.03) rotate(0deg);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-    z-index: 1;
-}
-
-#polaroid-1 {
-    transform: rotate(-17deg);
-    position: absolute;
-    top: 550px;
-    left: 100px;
-}
-
-#polaroid-2 {
-    transform: rotate(22deg);
-    position: absolute;
-    top: 800px;
-    right: 70px;
-}
-
-#polaroid-3 {
-    transform: rotate(11deg);
-    position: absolute;
-    top: 1400px;
-    left: 150px;
 }
 
 .polaroid img {
@@ -140,82 +144,177 @@
     object-fit: cover;
 }
 
+.polaroid:hover {
+    transform: scale(1.03) rotate(2deg);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    z-index: 3;
+}
+
+#polaroid-1 {
+    transform: rotate(-17deg);
+    top: -2rem;
+    position: relative;
+    z-index: 3;
+}
+
+.polaroids, .polaroid {
+    position: relative;
+    z-index: 3;
+}
+
 .invitation-text {
     font-family: 'Playfair Display', serif;
     color: #000000;
-    max-width: 600px;
-    margin: 2rem auto;
+    max-width: 310px;
     text-align: left;
     line-height: 1.6;
-    font-size: 1.2rem;
-    position: absolute;
-    top: 1200px;
-    left: 120px;
-    width: 500px;
+    font-size: 1.3rem;
+    margin: 8rem 1rem 8rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#polaroid-2 {
+    transform: rotate(22deg) translateX(-3rem);
+    position: relative;
+    z-index: 3;
+    /*left: -3rem;*/
+}
+
+.container-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 #icon-form {
-    max-width: 100px;
-    max-height: 100px;
-    position: absolute;
-    top: 1450px;
-    right: 400px;
+    max-width: 90px;
+    max-height: 90px;
+    margin-top: 7rem;
 }
 
 #form-text {
     color: #FA640E;
     font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
     margin-top: 2rem;
-    font-size: 1.2rem;
-    position: absolute;
-    top: 1550px;
-    right: 200px;
-    width: 500px;
+    margin-bottom: 7rem;
 }
 
-@media (max-width: 768px) {
-    .save, .date {
-        font-size: 3rem;
+#polaroid-3 {
+    transform: rotate(11deg);
+    position: relative;
+    margin-top: 2rem;
+    z-index: 3;
+}
+
+/* Small (sm) */
+@media (min-width: 640px) { }
+
+/* Medium (md) */
+@media (min-width: 768px) { }
+
+/* Large (lg) */
+@media (min-width: 1024px) {
+    .save {
+        transform: translateX(-13.5rem);
     }
 
     .the {
-        font-size: 2rem;
+        transform: translateY(-3rem);
     }
 
-    .names {
-        font-size: 2rem;
+    .date {
+        transform: translateX(10rem) translateY(-7rem);
     }
 
-    .polaroids {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .polaroid img {
-        width: 180px;
-        height: 180px;
-    }
-}
-
-@media (max-width: 480px) {
     .save, .date {
-        font-size: 2.5rem;
-    }
-
-    .the {
-        font-size: 1.5rem;
-    }
-
-    .names {
-        font-size: 1.5rem;
+        font-size: 13rem;
     }
 
     .wedding-info {
-        font-size: 1rem;
+        margin-top: -8rem;
     }
 
-    .polaroid img {
-        width: 150px;
-        height: 150px;
+    .pour-le-mariage {
+        font-size: 5.5rem;
+        margin-bottom: 1rem;
+    }
+
+    #line2 {
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    #paragraph-v, #paragraph-et, #paragraph-y {
+        font-size: 5.5rem;
+        margin: 0 2rem;
+    }
+
+    .wedding-date {
+        font-size: 5.5rem;
+    }
+
+    .location {
+        font-size: 5.5rem;
+    }
+
+    .polaroids, .polaroid {
+        z-index: 2;
+    }
+
+    .polaroid-container {
+        min-height: 150vh;
+    }
+
+    #polaroid-1 {
+        transform: rotate(-17deg) translateX(-20rem) translateY(-5rem);
+    }
+
+    .invitation-text {
+        transform: translateY(7.5rem) translateX(-10rem);
+    }
+
+    #polaroid-2 {
+        transform: rotate(22deg) translateX(5rem) translateY(-45rem);
+    }
+
+    #icon-form {
+        transform: translateY(-32rem) translateX(10rem);
+    }
+
+    #form-text {
+        transform: translateX(10rem) translateY(-32rem);
+    }
+
+    #polaroid-3 {
+        transform: rotate(11deg) translateX(-25rem) translateY(-36rem);
     }
 }
+
+/* Extra Large (xl) */
+@media (min-width: 1280px) {
+    .save {
+        transform: translateX(-15.5rem);
+    }
+
+    .the {
+        transform: translateY(-3rem);
+        font-size: 5rem;
+    }
+
+    .date {
+        transform: translateX(10rem) translateY(-9rem);
+    }
+
+    .save, .date {
+        font-size: 18rem;
+    }
+}
+
+/* 2XL */
+@media (min-width: 1536px) { }

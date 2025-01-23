@@ -9,7 +9,11 @@ export const translations = {
             },
             weddingInfo: {
                 line1: "Pour le mariage",
-                line2: "Vanessa & Yann",
+                line2: {
+                    paragraphV: "Vanessa",
+                    paragraphEt: "&",
+                    paragraphY: "Yann"
+                },
                 weddingDate: "Le 26 juillet 2025,",
                 location: "à Gréoux-Les-Bains"
             },
