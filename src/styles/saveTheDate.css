@@ -9,7 +9,7 @@ body, html {
 }
 
 .content-background {
-    background: no-repeat url("./background/lavender-background.png");
+    background: no-repeat url("/background/lavender-background.png");
     background-size: cover;
     filter: brightness(0.90);
     display: flex;
