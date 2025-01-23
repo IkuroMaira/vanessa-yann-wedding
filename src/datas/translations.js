@@ -9,7 +9,11 @@ export const translations = {
             },
             weddingInfo: {
                 line1: "Pour le mariage",
-                line2: "Vanessa & Yann",
+                line2: {
+                    paragraphV: "Vanessa",
+                    paragraphEt: "&",
+                    paragraphY: "Yann"
+                },
                 weddingDate: "Le 26 juillet 2025,",
                 location: "à Bouc-Bel-Air"
             },
@@ -32,7 +36,11 @@ export const translations = {
             },
             weddingInfo: {
                 line1: "For the wedding of",
-                line2: "Vanessa & Yann",
+                line2: {
+                    paragraphV: "Vanessa",
+                    paragraphEt: "&",
+                    paragraphY: "Yann"
+                },
                 weddingDate: "The 26th of July",
                 location: "at Bouc-Bel-Air"
             },

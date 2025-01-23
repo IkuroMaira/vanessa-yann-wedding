@@ -3,14 +3,8 @@ import '../styles/saveTheDate.css';
 import '../styles/global.css';
 ---
 <main>
-    <div class="save-the-date-container">
-        <img src="/background/lavender-background.png" alt="Champ de lavande" class="cover-image">
-
-        <!-- Vague décorative -->
-        <div class="wave-container">
-        </div>
-
-        <div class="content">
+    <div class="content">
+        <div class="content-background" id="cover-image">
             <div class="title">
                 <span class="save" id="save"></span>
                 <span class="the" id="the"></span>
@@ -19,11 +13,19 @@ import '../styles/global.css';
 
             <div class="wedding-info">
                 <div class="pour-le-mariage" id="line1"></div>
-                <div class="names" id="line2"></div>
+                <div class="names" id="line2">
+                    <p id="paragraph-v"></p>
+                    <p id="paragraph-et"></p>
+                    <p id="paragraph-y"></p>
+                </div>
                 <div class="wedding-date" id="wedding-date"></div>
                 <div class="location" id="location"></div>
             </div>
+        </div>
+    </div>
 
+    <div class="polaroid-container">
+        <div class="polaroid-wrapper">
             <div class="polaroids" id="polaroid-1">
                 <div class="polaroid">
                     <img src="/photos/couple-stare.jpg" alt="Photo des fiancés 1">
@@ -31,8 +33,8 @@ import '../styles/global.css';
             </div>
 
             <div class="invitation-text">
-                <p id="paragraph1"></p>
-                <p id="paragraph2"></p>
+                <p id="paragraph1" class="paragraph"></p>
+                <p id="paragraph2" class="paragraph"></p>
             </div>
 
             <div class="polaroids" id="polaroid-2">
@@ -42,9 +44,11 @@ import '../styles/global.css';
             </div>
 
             <!-- Icône de lavande -->
-            <img src="/icons/icon-header-lavender.png" id="icon-form">
+            <div class="container-form">
+                <img src="/icons/icon-header-lavender.png" id="icon-form" alt="icône de lavande">
 
-            <div class="form-reminder" id="form-text">bug</div>
+                <div class="form-reminder" id="form-text"></div>
+            </div>
 
             <div class="polaroids" id="polaroid-3">
                 <div class="polaroid">
@@ -54,3 +58,30 @@ import '../styles/global.css';
         </div>
     </div>
 </main>
+
+<script>
+    const polaroids = [
+        { title: "Photo 1", rotation: 0 },
+        { title: "Photo 2", rotation: 0 },
+        { title: "Photo 3", rotation: 0 }
+    ];
+
+    polaroids.forEach((polaroid, index) => {
+        const div = document.querySelector('.polaroid');
+    });
+
+    window.addEventListener('scroll', () => {
+        const scrollY = window.scrollY;
+
+        document.querySelectorAll('.polaroid').forEach((polaroid, index) => {
+            // Calcul de l'offset (entre 0 et 1)
+            const offset = Math.max(0, Math.min(1, (scrollY - (index * 300)) / 500));
+
+            // Calcul de la rotation (-7 à 7 degrés)
+            const rotate = (index % 2 === 0 ? 1 : -1) * offset * 7;
+
+            // Application de la rotation
+            polaroid.style.transform = `rotate(${rotate}deg)`;
+        });
+    }, { passive: true });
+</script>
