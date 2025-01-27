@@ -71,19 +71,19 @@ import '../styles/global.css';
             const div = document.querySelector('.polaroid');
         });
 
-        window.addEventListener('scroll', () => {
-            const scrollY = window.scrollY;
-
-            document.querySelectorAll('.polaroid').forEach((polaroid, index) => {
-                // Calcul de l'offset (entre 0 et 1)
-                const offset = Math.max(0, Math.min(1, (scrollY - (index * 300)) / 500));
-
-                // Calcul de la rotation (-7 à 7 degrés)
-                const rotate = (index % 2 === 0 ? 1 : -1) * offset * 7;
-
-                // Application de la rotation
-                polaroid.style.transform = `rotate(${rotate}deg)`;
-            });
-        }, { passive: true });
+        // window.addEventListener('scroll', () => {
+        //     const scrollY = window.scrollY;
+        //
+        //     document.querySelectorAll('.polaroid').forEach((polaroid, index) => {
+        //         // Calcul de l'offset (entre 0 et 1)
+        //         const offset = Math.max(0, Math.min(1, (scrollY - (index * 300)) / 500));
+        //
+        //         // Calcul de la rotation (-7 à 7 degrés)
+        //         const rotate = (index % 2 === 0 ? 1 : -1) * offset * 7;
+        //
+        //         // Application de la rotation
+        //         polaroid.style.transform = `rotate(${rotate}deg)`;
+        //     });
+        // }, { passive: true });
     });
 </script>
