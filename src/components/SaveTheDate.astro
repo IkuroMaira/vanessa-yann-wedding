@@ -61,15 +61,65 @@ import '../styles/global.css';
 
 <script>
     document.addEventListener('DOMContentLoaded', () => {
-        const polaroids = [
-            { title: "Photo 1", rotation: 0 },
-            { title: "Photo 2", rotation: 0 },
-            { title: "Photo 3", rotation: 0 }
-        ];
+        // Détection du mobile
+        const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
-        polaroids.forEach((polaroid, index) => {
-            const div = document.querySelector('.polaroid');
-        });
+        if (isMobile) {
+            // Réduisons l'intensité des animations sur mobile
+            let lastScrollY = window.scrollY;
+            let frameId = null;
+
+            const updatePolaroids = () => {
+                const currentScrollY = window.scrollY;
+                const scrollDiff = currentScrollY - lastScrollY;
+
+                document.querySelectorAll('.polaroid').forEach((polaroid, index) => {
+                    const rect = polaroid.getBoundingClientRect();
+
+                    // Ne mettons à jour que si l'élément est proche du viewport
+                    if (rect.top < window.innerHeight + 100 && rect.bottom > -100) {
+                        // Réduisons l'amplitude de la rotation sur mobile
+                        const rotationAmount = (index % 2 === 0 ? 1 : -1) * Math.min(Math.abs(scrollDiff) * 0.1, 3);
+
+                        // Appliquons une transformation plus légère
+                        polaroid.style.transform = `rotate(${rotationAmount}deg)`;
+                    }
+                });
+
+                lastScrollY = currentScrollY;
+                frameId = null;
+            };
+
+            // Gestionnaire d'événements de défilement optimisé
+            window.addEventListener('scroll', () => {
+                if (!frameId) {
+                    frameId = requestAnimationFrame(updatePolaroids);
+                }
+            }, { passive: true });
+
+            // Nettoyage des transformations quand le défilement s'arrête
+            let scrollTimeout;
+            window.addEventListener('scroll', () => {
+                clearTimeout(scrollTimeout);
+                scrollTimeout = setTimeout(() => {
+                    document.querySelectorAll('.polaroid').forEach(polaroid => {
+                        polaroid.style.transform = 'none';
+                    });
+                }, 150);
+            }, { passive: true });
+        }
+    });
+
+    // document.addEventListener('DOMContentLoaded', () => {
+    //     const polaroids = [
+    //         { title: "Photo 1", rotation: 0 },
+    //         { title: "Photo 2", rotation: 0 },
+    //         { title: "Photo 3", rotation: 0 }
+    //     ];
+    //
+    //     polaroids.forEach((polaroid, index) => {
+    //         const div = document.querySelector('.polaroid');
+    //     });
 
         // window.addEventListener('scroll', () => {
         //     const scrollY = window.scrollY;
@@ -85,5 +135,5 @@ import '../styles/global.css';
         //         polaroid.style.transform = `rotate(${rotate}deg)`;
         //     });
         // }, { passive: true });
-    });
+    // });
 </script>

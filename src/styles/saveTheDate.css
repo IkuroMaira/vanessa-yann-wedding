@@ -4,34 +4,41 @@
     box-sizing: border-box;
 }
 
-body, html {
+html {
+    position: fixed;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+
+body {
+    /* Permet le défilement naturel dans le body */
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch; /* Pour un défilement fluide sur iOS */
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
-    height: 100%;
-    width: 100%;
     position: relative;
 }
 
 main {
-    position: relative;
-    width: 100%;
+    height: auto;
     min-height: 100vh;
-    overflow-y: auto;
-    overflow-x: hidden;
+    width: 100%;
+    position: relative;
 }
 
 .content-background {
     background: no-repeat url("/background/lavender-background.png");
     background-size: cover;
-    filter: brightness(0.90);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    /*min-height: 100vh;*/
-    /*width: 100%;*/
-    /*position: relative;*/
+    background-attachment: scroll; /* Important pour mobile */
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+    -webkit-transform: translateZ(0); /* Optimisation des performances */
+    transform: translateZ(0);
 }
 
 .content-background::before {
@@ -135,10 +142,10 @@ main {
     width: 100%;
     /*min-height: 200vh;*/
     padding: 2rem;
-}
-
-.polaroid-container {
-    display: flex;
+    transform: none; /* Reset des transformations complexes sur mobile */
+    height: auto;
+    position: relative;
+    z-index: 2;
 }
 
 .polaroids {
@@ -163,6 +170,10 @@ main {
     width: 350px;
     height: 350px;
     object-fit: cover;
+
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform; /* Optimisation des performances */
 }
 
 .polaroid:hover {
@@ -255,13 +266,32 @@ main {
         text-align: left;
     }
 
-    .invitation-text {
-        max-width: 650px;
+    /*#polaroid-2 {*/
+    /*    transform: rotate(22deg) translateX(-5rem) translateY(0rem);*/
+    /*}*/
 
+    .polaroid {
+        /* Réduisons la taille des ombres et des effets sur mobile */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease;
     }
 
-    #polaroid-2 {
-        transform: rotate(22deg) translateX(-5rem) translateY(0rem);
+    .polaroid:hover {
+        /* Désactivons ou réduisons l'effet hover sur mobile */
+        transform: scale(1.01);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Ajustements des positions pour un meilleur rendu mobile */
+    #polaroid-1, #polaroid-2, #polaroid-3 {
+        transform: none;
+        margin: 1rem 0;
+    }
+
+    .invitation-text {
+        transform: none;
+        margin: 2rem 1rem;
+        text-align: center;
     }
 }
 
