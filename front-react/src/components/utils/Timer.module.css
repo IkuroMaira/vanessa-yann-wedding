@@ -1,0 +1,19 @@
+.timerContainer {
+    color: #9174AC;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    font-family: "Playfair Display", serif;
+}
+
+.countdownNumber {
+    font-weight: 600;
+    line-height: 1;
+    margin-right: 4px;
+}
+
+.countdownLabel {
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    text-transform: uppercase;
+}

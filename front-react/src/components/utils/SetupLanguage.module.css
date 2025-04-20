@@ -1,0 +1,12 @@
+.langSwitch {
+    color: #9174AC;
+    transition: color 0.2s ease;
+    padding: 0.5rem;
+    border: none;
+    background: none;
+    font-family: "Playfair Display", serif;
+}
+
+.langSwitch:hover {
+    color: rgb(17, 24, 39);
+}
