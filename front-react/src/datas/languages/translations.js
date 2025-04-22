@@ -1,7 +1,7 @@
 export const translations = {
-    fr: [
+    en: [
         {
-            buttonText: "Passer en français",
+            buttonText: "Switch to English", // Texte pour passer à l'anglais
             title: {
                 save: "Save",
                 the: "the",
@@ -24,11 +24,19 @@ export const translations = {
             formReminder: {
                 text: "Pensez à remplir le formulaire.",
             },
+            timer: {
+                days: "jours",
+                hours: "heures",
+                loading: "Chargement...",
+                weddingDay: "JOUR J !",
+                weddingEve: "Veille du mariage !",
+                thanks: "Merci d'avoir participé à cette célébration."
+            }
         },
     ],
-    en: [
+    fr: [
         {
-            buttonText: "Switch to English",
+            buttonText: "Passer en français", // Texte pour passer au français
             title: {
                 save: "Save",
                 the: "the",
@@ -50,8 +58,15 @@ export const translations = {
             },
             formReminder: {
                 text: "Please remember to fill out the form with your personal information.",
+            },
+            timer: {
+                days: "days",
+                hours: "hours",
+                loading: "Loading...",
+                weddingDay: "WEDDING DAY!",
+                weddingEve: "Wedding Eve!",
+                thanks: "Thank you for participating in this celebration."
             }
         },
     ]
 };
-

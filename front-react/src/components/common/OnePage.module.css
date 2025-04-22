@@ -6,15 +6,16 @@
 }
 
 .contentBackground {
-    background: no-repeat url("/background/lavender-background.png");
     background-size: cover;
+    background: no-repeat url('../../assets/background/lavenders-background.png');
+    /*background-color: #9174AC;*/
     background-attachment: scroll; /* Important pour mobile */
     width: 100%;
     min-height: 100vh;
-    position: relative;
-    z-index: 1;
-    -webkit-transform: translateZ(0); /* Optimisation des performances */
-    transform: translateZ(0);
+    /*position: relative;*/
+    /*z-index: 1;*/
+    /*-webkit-transform: translateZ(0); !* Optimisation des performances *!*/
+    /*transform: translateZ(0);*/
 }
 
 .contentBackground::before {

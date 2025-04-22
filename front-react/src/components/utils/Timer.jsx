@@ -1,13 +1,18 @@
 import React, {useEffect, useState} from "react";
+import {useLanguage} from "../../contexts/LanguageContext.jsx";
+import {translations} from "../../datas/languages/translations.js";
 import styles from "./Timer.module.css"
 
-function Timer() {
+export default function Timer() {
     const [days, setDays] = useState();
     const [hours, setHours] = useState();
     const [message, setMessage] = useState('');
     const [isSpecialDay, setIsSpecialDay] = useState(false);
 
-    const weddingDate = new Date("2025-07-26T00:00:00"); // Changer l'heure dès que je connais l'heure de la cérémonie
+    const weddingDate = new Date("2025-07-26T15:00:00");
+
+    const {language} = useLanguage();
+    const timerText = translations[language][0].timer;
 
     useEffect(() => {
         function updateDisplay() {
@@ -18,17 +23,17 @@ function Timer() {
             const hoursCalculated = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 
             if (difference < 0) {
-                setMessage("Merci d'avoir participé à cette célébration.");
+                setMessage(timerText.thanks);
                 setIsSpecialDay(true);
                 setDays(0);
                 setHours(0);
             } else if (daysCalculated === 0 && hoursCalculated === 0) {
-                setMessage("JOUR J !");
+                setMessage(timerText.weddingDay);
                 setIsSpecialDay(true);
                 setDays(0);
                 setHours(0);
             } else if (daysCalculated === 1) {
-                setMessage("Veille du mariage !");
+                setMessage(timerText.weddingEve);
                 setIsSpecialDay(true);
                 setDays(0);
                 setHours(0);
@@ -43,9 +48,6 @@ function Timer() {
         updateDisplay();
         setInterval(updateDisplay, 1000 * 60 *60);
     }, []);
-
-    console.log("days ", days);
-    console.log("hours ", hours);
 
     return (
         <>
@@ -66,11 +68,9 @@ function Timer() {
                         </>
                     )
                 ) : (
-                    <span className={styles.timer}>Chargement...</span>
+                    <span className={styles.timer}>{timerText.loading}</span>
                 )}
             </div>
         </>
     )
 }
-
-export default Timer
