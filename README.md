@@ -6,7 +6,7 @@
 
 Site web bilingue créé pour célébrer le mariage de Vanessa et Yann. Ce projet se déploie en trois phases principales.
 
-Bilingual website created to celebrate Vanessa and Yann's wedding. This project unfolds in three main phases, offering an interactive experience to guests.
+Vous pouvez voir le site en ligne [ici](https://yannessa.fr/).
 
 ### Fonctionnalités
 
@@ -51,7 +51,8 @@ Ce projet est privé et n'est pas ouvert à la reproduction sans autorisation.
 
 ### About
 
-Bilingual website created to celebrate Vanessa and Yann's wedding. This project unfolds in three main phases, offering an interactive experience to guests.
+Bilingual website created to celebrate Vanessa and Yann's wedding. This project unfolds in three main phases.
+You can view the site online [here](https://yannessa.fr/).
 
 ### Features
 
