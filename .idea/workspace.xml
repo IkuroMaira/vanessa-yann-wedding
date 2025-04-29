@@ -5,25 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8e46d5a-ccbe-4a53-9ba3-b09184968cfe" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vanessa-yann-wedding.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vanessa-yann-wedding.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-react/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-react/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-react/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-react/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-react/src/components/common/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/src/components/common/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-react/src/components/common/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/src/components/common/Header.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-react/src/components/common/OnePage.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-react/src/components/common/OnePage.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-react/src/components/utils/SetupLanguage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/src/components/utils/SetupLanguage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-react/src/components/utils/SetupLanguage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/src/components/utils/SetupLanguage.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-react/src/components/utils/Timer.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/src/components/utils/Timer.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-react/src/datas/languages/translations.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/src/datas/languages/translations.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-react/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/src/index.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-react/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/src/main.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-react/src/pages/Galery.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-react/src/pages/HomeLayout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/src/layouts/HomeLayout.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-react/src/pages/HomeLayout.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/src/layouts/HomeLayout.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-react/src/index.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/src/index.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +102,7 @@
       <workItem from="1745083162731" duration="66123000" />
       <workItem from="1745531458652" duration="4073000" />
       <workItem from="1745852351012" duration="27285000" />
-      <workItem from="1745919569166" duration="4086000" />
+      <workItem from="1745919569166" duration="4792000" />
     </task>
     <servers />
   </component>
