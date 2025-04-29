@@ -1,0 +1,18 @@
+:root {
+    /* Couleurs principales */
+    --color-primary: #9174AC; /* Violet lavande */
+    --color-secondary: #FA640E; /* Orange */
+    --color-background: #FCF5EB; /* Beige clair */
+    --color-text-dark: #2C1343; /* Violet foncé */
+    --color-text-light: #FCF5EB; /* Blanc cassé */
+
+    /* Variantes de transparence */
+    --color-primary-transparent: rgba(145, 116, 172, 0.8);
+    --color-background-transparent: rgba(250, 249, 249, 0.25);
+
+    /* Ombres */
+    --shadow-light: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-medium: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --text-shadow-1: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    --text-shadow-2: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}

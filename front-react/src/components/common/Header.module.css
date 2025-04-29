@@ -1,42 +1,87 @@
 .header {
-    background-color: #FCF5EB;
+    background-color: rgba(252, 245, 235, 1);
     box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
     width: 100%;
-    padding: 0.5em;
+    padding: 0.8em 0.5em; /* Padding initial plus grand */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: all 0.3s ease; /* Transition pour tous les changements */
+}
+
+.headerScrolled {
+    background-color: rgba(252, 245, 235, 0.8);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    padding: 0.4em 0.5em; /* Padding réduit quand scrollé */
 }
 
 .headerContainer {
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 1rem;
+    position: relative;
 }
 
 .headerContent {
-    height: 3rem;
+    height: 3rem; /* Hauteur initiale */
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: height 0.3s ease; /* Transition pour la hauteur */
 }
 
-.countdownItem {
-    display: inline-flex;
+.headerScrolled .headerContent {
+    height: 2.5rem; /* Hauteur réduite quand scrollé */
+}
+
+.leftSection {
+    display: flex;
     align-items: center;
-    text-align: center;
-    margin: 0.3em;
+}
+
+.rightSection {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.iconContainer {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    transition: transform 0.3s ease; /* Transition pour la transformation */
 }
 
 .icon {
     max-width: 50px;
     max-height: 50px;
+    transition: transform 0.3s ease; /* Transition pour la taille de l'icône */
 }
 
-/* Mobile (moins de 640px) */
+.headerScrolled .icon {
+    transform: scale(0.8); /* Réduction de taille de 20% */
+}
+
+.centerPlaceholder {
+    width: 50px;
+    visibility: hidden;
+    transition: width 0.3s ease; /* Transition pour la largeur */
+}
+
+.headerScrolled .centerPlaceholder {
+    width: 40px; /* Width réduite quand scrollé */
+}
+
 @media screen and (max-width: 639px) {
-    .header-container {
+    .headerContainer {
         padding: 0 0.5rem;
     }
 
-    .header-content {
+    .headerContent {
         height: 3.5rem;
     }
 
@@ -45,49 +90,51 @@
     }
 
     .icon {
-        width: 20px;
-        height: 20px;
+        width: 36px;
+        height: 36px;
     }
 
-    #lang-switch {
+    .langSwitch {
         font-size: 0.875rem;
     }
-}
 
-/* Tablette (640px à 1023px) */
-@media screen and (min-width: 640px) and (max-width: 1023px) {
-    .header-container {
-        padding: 0 1.5rem;
+    .rightSection {
+        gap: 0.5rem;
     }
 }
 
-/* Grand écran (1024px et plus) */
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+    .headerContainer {
+        padding: 0 1.5rem;
+    }
+
+    .icon {
+        width: 42px;
+        height: 42px;
+    }
+}
+
 @media screen and (min-width: 1024px) {
-    .header-container {
+    .headerContainer {
         padding: 0 2rem;
     }
 
-    .countdown-item {
-        font-size: 1.5rem;
-    }
-
-    #lang-switch {
+    .langSwitch {
         font-size: 1rem;
     }
 }
 
-/* Pour éviter les chevauchements sur très petits écrans */
 @media screen and (max-width: 359px) {
-    .header-content {
-        gap: 0.5rem;
-    }
-
     .timer {
         font-size: 0.875rem;
     }
 
     .icon {
-        width: 18px;
-        height: 18px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .leftSection {
+        max-width: 40%;
     }
 }

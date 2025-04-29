@@ -1,7 +1,7 @@
 export const translations = {
     en: [
         {
-            buttonText: "Switch to English", // Texte pour passer à l'anglais
+            buttonText: "EN", // Texte pour passer à l'anglais
             title: {
                 save: "Save",
                 the: "the",
@@ -36,7 +36,7 @@ export const translations = {
     ],
     fr: [
         {
-            buttonText: "Passer en français", // Texte pour passer au français
+            buttonText: "FR", // Texte pour passer au français
             title: {
                 save: "Save",
                 the: "the",

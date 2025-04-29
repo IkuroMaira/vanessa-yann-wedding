@@ -1,5 +1,5 @@
 .timerContainer {
-    color: #9174AC;
+    color: var(--color-primary);
     display: flex;
     gap: 2rem;
     align-items: center;
@@ -16,4 +16,12 @@
     font-size: 0.875rem;
     margin-top: 0.25rem;
     text-transform: uppercase;
+}
+
+@media screen and (max-width: 639px) {
+    .timerContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
 }

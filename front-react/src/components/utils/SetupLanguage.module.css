@@ -1,5 +1,5 @@
 .langSwitch {
-    color: #9174AC;
+    color: var(--color-primary);
     transition: color 0.2s ease;
     padding: 0.5rem;
     border: none;

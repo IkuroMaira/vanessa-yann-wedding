@@ -1,0 +1,17 @@
+.infoContainer {
+    background: url('../../assets/background/Setoftenderwatercolorlavenderflowerelementsisolatedonwhitebackground.png') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.infoOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-background-transparent);
+    /*filter: brightness(0.90);*/
+}

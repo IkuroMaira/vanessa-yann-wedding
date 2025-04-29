@@ -8,7 +8,7 @@ export default function SetupLanguage() {
     const switchToEn = translations.en[0].buttonText;
     const switchToFr = translations.fr[0].buttonText;
 
-    const buttonText = language === 'fr' ? switchToEn : switchToFr;
+    const buttonText = language === 'fr' ? switchToFr : switchToEn;
 
     return (
         <>
