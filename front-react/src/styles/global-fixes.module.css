@@ -1,0 +1,50 @@
+/* Force l'élimination du scroll horizontal sur tous les éléments importants */
+html, body, #root,
+.main, .heroContainer, .contentContainer,
+.invitContainer, .infoContainer, .mapContainer,
+.titleContainer, .weddingInfo, .names,
+.mapsContainer, .embedMap {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+    box-sizing: border-box !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    position: relative !important;
+    left: 0 !important;
+    right: 0 !important;
+    transform: none !important; /* Annuler les transformations qui causent des débordements */
+}
+
+/* Modification pour les éléments enfants du HeroSection */
+.titleContainer > * {
+    width: 100% !important;
+    max-width: 100% !important;
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
+    text-align: center !important;
+}
+
+/* Correction spécifique pour les éléments flex qui peuvent causer un débordement */
+.names, .paragraphWedding {
+    width: auto !important;
+    max-width: 100% !important;
+    flex-wrap: wrap !important;
+}
+
+/* Assurer que tous les conteneurs principaux sont bien configurés */
+.main > *, .contentContainer > * {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+/* Assurez-vous que les iframes sont correctement dimensionnés */
+iframe {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+}

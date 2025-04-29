@@ -1,6 +1,8 @@
 .heroContainer {
     background: url('../../assets/background/lavenders-background.png') no-repeat center center;
-    background-size: cover;
+    /*background-size: cover;*/
+    background-size: cover !important;
+    background-position: center center !important;
     width: 100%;
     height: 100vh; /* C'est la hauteur pleine page */
     position: relative;
