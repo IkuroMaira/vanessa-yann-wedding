@@ -18,19 +18,3 @@ html, body, #root {
     max-width: 100vw;
     overflow-x: hidden;
 }
-
-.main,
-.heroContainer,
-.invitContainer,
-.infoContainer,
-.mapContainer {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-    box-sizing: border-box;
-}
-
-[class*="background"] {
-    background-size: cover;
-    background-position: center;
-}
