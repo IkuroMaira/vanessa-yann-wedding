@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c8e46d5a-ccbe-4a53-9ba3-b09184968cfe" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-react/src/index.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/src/index.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +101,7 @@
       <workItem from="1745083162731" duration="66123000" />
       <workItem from="1745531458652" duration="4073000" />
       <workItem from="1745852351012" duration="27285000" />
-      <workItem from="1745919569166" duration="4792000" />
+      <workItem from="1745919569166" duration="6357000" />
     </task>
     <servers />
   </component>

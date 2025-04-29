@@ -18,3 +18,8 @@ html, body, #root {
     max-width: 100vw;
     overflow-x: hidden;
 }
+
+[class*="background"] {
+    background-size: cover;
+    background-position: center;
+}
