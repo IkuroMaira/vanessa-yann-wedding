@@ -1,8 +1,8 @@
 .header {
-    background-color: rgba(252, 245, 235, 1);
+    background-color: var(--color-header-light);
     box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-    width: 100%;
-    padding: 0.8em 0.5em; /* Padding initial plus grand */
+    width: 100vw;
+    padding: 0.8em 0.5rem; /* Padding initial plus grand */
     position: fixed;
     top: 0;
     left: 0;
@@ -11,7 +11,7 @@
 }
 
 .headerScrolled {
-    background-color: rgba(252, 245, 235, 0.8);
+    background-color: var(--color-background-transparent-header);
     backdrop-filter: blur(5px);
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     padding: 0.4em 0.5em; /* Padding réduit quand scrollé */

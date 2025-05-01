@@ -13,22 +13,11 @@ export default function WeddingMap() {
             </h2>
 
             <div className={styles.mapsContainer}>
-                <div className={styles.planningContainer}>
+                <div className={styles.infoLocationContainer}>
                     <h3 className={styles.locationTitle}>
                         Mairie de Bouc-Bel-Air
                         <span>{translations[language][0].mapSection?.ceremonyInfo || "Cérémonie civile"}</span>
                     </h3>
-                    <p className={styles.planning}>
-                        Le programme
-                        15h00 : Rendez-vous à la mairie
-                        15h40 : Départ pour le Pavillon d’Aurabelle
-                        (environ 1h de route)
-                        16h30 : Arrivée au Pavillon
-                        17h30 : Cérémonie franco-indienne
-                        20h00 : Début de la soirée
-                        21h00 : Dîner
-                        (Les enfants pourront être servis plus tôt)
-                    </p>
                 </div>
 
                 <div className={styles.mapWrapper}>

@@ -2,6 +2,7 @@ import React from "react";
 import { useLanguage } from "../../contexts/LanguageContext.jsx";
 import { translations } from "../../datas/languages/translations.js";
 import styles from "./HeroSection.module.css";
+import { Link } from "react-scroll";
 
 export default function HeroSection() {
     const { language } = useLanguage();
@@ -27,9 +28,15 @@ export default function HeroSection() {
                     <div className={styles.location}>{translations[language][0].weddingInfo.location}</div>
                 </div>
 
-                <div className={styles.scrollIndicator}>
+                <Link
+                    to="invit-section"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    className={styles.scrollIndicator}
+                >
                     <span className={styles.scrollArrow}>↓</span>
-                </div>
+                </Link>
             </div>
         </div>
     );

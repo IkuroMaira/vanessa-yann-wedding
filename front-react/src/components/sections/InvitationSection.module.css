@@ -1,11 +1,11 @@
 .invitSection {
     background-color: var(--color-background);
-    padding: 4rem 2rem;
+    /*padding: 4rem 2rem;*/
 }
 
 .invitContainer {
-    min-width: 100%;
-    min-height: 80vh;
+    min-width: 100vw;
+    min-height: 100vh;
     margin: 0 auto;
     text-align: center;
     display: flex;
@@ -13,7 +13,7 @@
     align-items: center;
     justify-content: center;
     background-color: var(--color-background);
-    padding: 4rem 2rem;
+    /*padding: 4rem 2rem;*/
 }
 
 .invitText {

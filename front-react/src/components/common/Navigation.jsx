@@ -67,6 +67,19 @@ export default function Navigation() {
                         {language === 'fr' ? 'Info' : 'Infos'}
                     </Link>
                 </li>
+
+                <li className={styles.navItem}>
+                    <Link
+                        to="wedding-map"
+                        spy={true}
+                        smooth={true}
+                        duration={500}
+                        activeClass={styles.active}
+                        onClick={closeMenu}
+                    >
+                        {language === 'fr' ? 'Location' : 'Localisation'}
+                    </Link>
+                </li>
             </ul>
         </nav>
     );

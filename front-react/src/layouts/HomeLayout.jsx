@@ -25,7 +25,7 @@ function HomeLayout() {
                     <InfoSection />
                 </Element>
 
-                <Element>
+                <Element name="wedding-map">
                     <WeddingMap />
                 </Element>
             </div>
