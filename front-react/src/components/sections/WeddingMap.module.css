@@ -19,7 +19,7 @@
 .mapsContainer {
     width: 100%;
     display: flex;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 
 .locationTitle {
@@ -59,14 +59,6 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        /*gap: 2rem;*/
-    }
-
-    .mapWrapper {
-        flex: 1;
-        min-width: fit-content;
-        /*max-width: calc(50% - 1rem);*/
-        max-width: fit-content;
     }
 }
 
@@ -79,6 +71,14 @@
 
     .mapContainer {
         display: flex;
+    }
+
+    .infoLocationContainer {
+        width: 90%;
+    }
+
+    .locationTitle {
+        margin-bottom: 1rem;
     }
 
     .mapTitle {

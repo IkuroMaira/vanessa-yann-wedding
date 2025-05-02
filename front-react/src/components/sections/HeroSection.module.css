@@ -1,7 +1,7 @@
 .heroContainer {
     background: url('../../assets/background/lavenders-background.png') no-repeat center;
     background-size: cover;
-    width: 100vh;
+    width: 100vw;
     position: relative;
     overflow: hidden;
     /* Utiliser une hauteur fixe mais soustraire la hauteur du header */
@@ -13,8 +13,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background-color: var(--color-background-transparent);
     filter: brightness(0.90);
 }
@@ -57,6 +57,7 @@
     letter-spacing: 2px;
     text-shadow: var(--text-shadow-1);
     margin-top: -1rem;
+    z-index: 2;
 }
 
 .date {
@@ -123,14 +124,14 @@
     text-shadow: var(--text-shadow-1);
 }
 
-.scrollIndicator {
-    position: absolute;
-    bottom: 2rem;
-    left: 50%;
-    transform: translateX(-50%);
-    animation: bounce 2s infinite;
-    cursor: pointer;
-}
+/*.scrollIndicator {*/
+/*    position: absolute;*/
+/*    bottom: 2rem;*/
+/*    left: 50%;*/
+/*    transform: translateX(-50%);*/
+/*    animation: bounce 2s infinite;*/
+/*    cursor: pointer;*/
+/*}*/
 
 .scrollArrow {
     font-size: 2rem;
@@ -234,7 +235,7 @@
 
     .the {
         font-size: 2.5rem;
-        margin-top: -0.5rem;
+        /*margin-top: -0.3rem;*/
     }
 
     .pourLeMariage {

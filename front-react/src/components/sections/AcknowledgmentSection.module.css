@@ -1,8 +1,8 @@
-.infoContainer {
+.acknowledgmentContainer {
     background: url('../../assets/background/Setoftenderwatercolorlavenderflowerelementsisolatedonwhitebackground.png') no-repeat center center;
     background-size: cover;
     width: 100vw;
-    height: 65vh;
+    height: 50vh;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -10,29 +10,10 @@
     justify-content: center;
 }
 
-.infoOverlay {
-    width: 90%;
-    /*height: 100%;*/
-    /*filter: brightness(0.90);*/
+.acknowledgmentParagraph {
+    margin: 2rem;
     padding: 2rem;
     border-radius: 8px;
     background-color: rgba(250, 249, 249, 0.94);
-}
-
-.planningContainer {
-    margin-bottom: 1rem;
-}
-
-.outfitParagraph {
-    margin: 1rem 0rem;
-}
-
-.brunchParagraph {
-    margin-bottom: 1rem;
-}
-
-@media (min-width: 320px) {
-    .infoContainer{
-        min-height: 90vh;
-    }
+    color: var(--color-primary);
 }

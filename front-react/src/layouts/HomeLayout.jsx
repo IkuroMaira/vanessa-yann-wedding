@@ -6,6 +6,8 @@ import HeroSection from "../components/sections/HeroSection.jsx";
 import InvitationSection from "../components/sections/InvitationSection.jsx";
 import InfoSection from "../components/sections/InfoSection.jsx";
 import WeddingMap from "../components/sections/WeddingMap.jsx";
+import AcknowledgmentSection from "../components/sections/AcknowledgmentSection.jsx";
+import Polaroid from "../components/images/Polaroid.jsx";
 
 function HomeLayout() {
     return (
@@ -17,9 +19,13 @@ function HomeLayout() {
                     <HeroSection />
                 </Element>
 
+                <Polaroid />
+
                 <Element name="invit-section">
                     <InvitationSection />
                 </Element>
+
+                <Polaroid />
 
                 <Element name="info-section">
                     <InfoSection />
@@ -27,6 +33,12 @@ function HomeLayout() {
 
                 <Element name="wedding-map">
                     <WeddingMap />
+                </Element>
+
+                <Polaroid />
+
+                <Element name="acknowledgment">
+                    <AcknowledgmentSection />
                 </Element>
             </div>
         </>
