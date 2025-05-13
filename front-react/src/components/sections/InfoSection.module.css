@@ -40,3 +40,9 @@
         min-height: 90vh;
     }
 }
+
+@media (min-width: 1023px) {
+    .infoOverlay {
+        padding: 5rem;
+    }
+}

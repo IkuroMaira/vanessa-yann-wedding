@@ -124,14 +124,14 @@
     text-shadow: var(--text-shadow-1);
 }
 
-/*.scrollIndicator {*/
-/*    position: absolute;*/
-/*    bottom: 2rem;*/
-/*    left: 50%;*/
-/*    transform: translateX(-50%);*/
-/*    animation: bounce 2s infinite;*/
-/*    cursor: pointer;*/
-/*}*/
+.scrollIndicator {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: bounce 2s infinite;
+    cursor: pointer;
+}
 
 .scrollArrow {
     font-size: 2rem;
@@ -157,9 +157,13 @@
         font-size: 10rem;
     }
 
+    .save {
+        margin-top: 7rem;
+    }
+
     .the {
         font-size: 3.5rem;
-        margin-top: -1.5rem;
+        margin-top: -2.5rem;
     }
 
     .names {
@@ -179,6 +183,16 @@
     .weddingDate, .location {
         font-size: 3.5rem;
     }
+
+    .heroContainer {
+        /* Utiliser une hauteur fixe mais soustraire la hauteur du header */
+        height: 120vh;
+        margin-top: var(--header-height, 4.6rem);
+    }
+
+    .overlay {
+        height: 120vh;
+    }
 }
 
 /* Grand écran */
@@ -187,6 +201,7 @@
         font-size: 15rem;
         left: -15%;
         line-height: 1;
+        margin-top: -5rem;
     }
 
     .the {
@@ -220,6 +235,16 @@
 
     .weddingDate, .location {
         font-size: 5rem;
+    }
+
+    .heroContainer {
+        /* Utiliser une hauteur fixe mais soustraire la hauteur du header */
+        height: 200vh;
+        margin-top: var(--header-height, 4.6rem);
+    }
+
+    .overlay {
+        height: 200vh;
     }
 }
 

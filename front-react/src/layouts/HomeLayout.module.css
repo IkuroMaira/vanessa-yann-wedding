@@ -1,6 +1,17 @@
 .main {
-    height: auto;
-    min-height: 100vh;
-    width: 100%;
-    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+    .main {
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .main {
+        max-width: 100%;
+    }
 }
