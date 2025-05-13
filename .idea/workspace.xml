@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c8e46d5a-ccbe-4a53-9ba3-b09184968cfe" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-react/src/components/sections/InfoSection.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/src/components/sections/InfoSection.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-react/src/components/sections/WeddingMap.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/src/components/sections/WeddingMap.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-react/src/components/sections/WeddingMap.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/src/components/sections/WeddingMap.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-react/src/datas/languages/translations.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/src/datas/languages/translations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-react/src/index.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-react/src/layouts/HomeLayout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/src/layouts/HomeLayout.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-react/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/src/main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-react/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/vite.config.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Astro Component" />
+        <option value="JavaScript File" />
+        <option value="TypeScript File" />
+        <option value="JSX File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/front-react/dist/assets/css/index-DghHvVRm.css" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2rWyKRnrDqmr7bDiFrK28xYbKUs" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Node.js.timer.js.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "dev",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "/Users/gwenaellebussac/Sites/Sites professionnels/vanessa-yann-wedding/front-react/src/datas/languages",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/front-react/src/datas/languages" />
+      <recent name="$PROJECT_DIR$/front-react/src/assets" />
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/public/icons" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/front-react/src/contexts" />
+      <recent name="$PROJECT_DIR$/front-react/src" />
+      <recent name="$PROJECT_DIR$/OLD_Astro" />
+      <recent name="$PROJECT_DIR$/src/components" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-WS-251.23774.424" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c8e46d5a-ccbe-4a53-9ba3-b09184968cfe" name="Changes" comment="" />
+      <created>1736689061933</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1736689061933</updated>
+      <workItem from="1736689063649" duration="167000" />
+      <workItem from="1736952625217" duration="5452000" />
+      <workItem from="1737041038883" duration="33000" />
+      <workItem from="1737110306836" duration="34000" />
+      <workItem from="1737110349845" duration="79309000" />
+      <workItem from="1737538282497" duration="12755000" />
+      <workItem from="1737557588797" duration="57000" />
+      <workItem from="1737557656363" duration="31124000" />
+      <workItem from="1738013514012" duration="2134000" />
+      <workItem from="1738080624587" duration="662000" />
+      <workItem from="1745083035656" duration="79000" />
+      <workItem from="1745083162731" duration="66123000" />
+      <workItem from="1745531458652" duration="4073000" />
+      <workItem from="1745852351012" duration="27285000" />
+      <workItem from="1745919569166" duration="15803000" />
+      <workItem from="1746009092138" duration="149000" />
+      <workItem from="1746129454919" duration="11841000" />
+      <workItem from="1746372925353" duration="5312000" />
+      <workItem from="1746380418961" duration="2979000" />
+      <workItem from="1747080393924" duration="31000" />
+      <workItem from="1747166458638" duration="1823000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

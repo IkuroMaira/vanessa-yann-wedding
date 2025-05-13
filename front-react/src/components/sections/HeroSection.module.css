@@ -1,0 +1,294 @@
+.heroContainer {
+    background: url('../../assets/background/lavenders-background.png') no-repeat center;
+    background-size: cover;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+    /* Utiliser une hauteur fixe mais soustraire la hauteur du header */
+    height: calc(100vh - var(--header-height, 4.6rem));
+    margin-top: var(--header-height, 4.6rem);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-background-transparent);
+    filter: brightness(0.90);
+}
+
+.contentContainer {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*padding: 1rem;*/
+    color: var(--color-background);
+}
+
+.titleContainer {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.save {
+    font-family: "Mrs Saint Delafield", serif;
+    color: var(--color-text-light);
+    font-size: 8rem;
+    text-shadow: var(--text-shadow-2);
+    line-height: 0.8;
+}
+
+.the {
+    font-family: 'Playfair Display', serif;
+    color: var(--color-secondary);
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-shadow: var(--text-shadow-1);
+    margin-top: -1rem;
+    z-index: 2;
+}
+
+.date {
+    font-family: "Mrs Saint Delafield", serif;
+    color: var(--color-text-light);
+    font-size: 8rem;
+    text-shadow: var(--text-shadow-2);
+    line-height: 0.8;
+    margin-top: -1rem;
+}
+
+.weddingInfo {
+    color: var(--color-text-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.pourLeMariage {
+    font-family: "Italianno", serif;
+    font-style: italic;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    text-shadow: var(--text-shadow-1);
+}
+
+.names {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem 0;
+}
+
+.paragraphWedding {
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+    text-shadow: var(--text-shadow-1);
+    line-height: 1.2;
+}
+
+/* Style spécial pour le & */
+.paragraphWedding:nth-child(2) {
+    font-family: "Italianno", serif;
+    font-size: 3.5rem;
+    color: var(--color-secondary);
+}
+
+.weddingDate {
+    font-family: "Italianno", serif;
+    font-style: italic;
+    font-size: 2.8rem;
+    margin-top: 0.5rem;
+    text-shadow: var(--text-shadow-1);
+}
+
+.location {
+    font-family: "Italianno", serif;
+    font-style: italic;
+    font-size: 2.5rem;
+    margin-top: 0.3rem;
+    text-shadow: var(--text-shadow-1);
+}
+
+/*.scrollIndicator {*/
+/*    position: absolute;*/
+/*    bottom: 2rem;*/
+/*    left: 50%;*/
+/*    transform: translateX(-50%);*/
+/*    animation: bounce 2s infinite;*/
+/*    cursor: pointer;*/
+/*}*/
+
+.scrollArrow {
+    font-size: 2rem;
+    color: var(--color-text-light);
+    text-shadow: var(--text-shadow-1);
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-15px);
+    }
+    60% {
+        transform: translateY(-7px);
+    }
+}
+
+/* Tablettes */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .save, .date {
+        font-size: 10rem;
+    }
+
+    .the {
+        font-size: 3.5rem;
+        margin-top: -1.5rem;
+    }
+
+    .names {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .paragraphWedding {
+        font-size: 4rem;
+        margin: 0 0.5rem;
+    }
+
+    .paragraphWedding:nth-child(2) {
+        font-size: 4.5rem;
+    }
+
+    .weddingDate, .location {
+        font-size: 3.5rem;
+    }
+}
+
+/* Grand écran */
+@media (min-width: 1024px) {
+    .save {
+        font-size: 15rem;
+        left: -15%;
+        line-height: 1;
+    }
+
+    .the {
+        font-size: 5rem;
+        transform: translateY(-3rem);
+    }
+
+    .date {
+        font-size: 15rem;
+        transform: translateY(-5rem);
+        right: -15%;
+        line-height: 1;
+    }
+
+    .names {
+        flex-direction: row;
+    }
+
+    .pourLeMariage {
+        font-size: 5.5rem;
+    }
+
+    .paragraphWedding {
+        font-size: 5.5rem;
+        margin: 0 1rem;
+    }
+
+    .paragraphWedding:nth-child(2) {
+        font-size: 6.5rem;
+    }
+
+    .weddingDate, .location {
+        font-size: 5rem;
+    }
+}
+
+/* Très petits écrans mobiles */
+@media (max-width: 480px) {
+    .titleContainer {
+        margin-bottom: 1rem;
+    }
+
+    .save, .date {
+        font-size: 6rem;
+    }
+
+    .the {
+        font-size: 2.5rem;
+        /*margin-top: -0.3rem;*/
+    }
+
+    .pourLeMariage {
+        font-size: 2.5rem;
+    }
+
+    .paragraphWedding {
+        font-size: 2.5rem;
+        margin: 0.1rem 0;
+    }
+
+    .paragraphWedding:nth-child(2) {
+        font-size: 3rem;
+    }
+
+    .weddingDate {
+        font-size: 2.5rem;
+    }
+
+    .location {
+        font-size: 2.2rem;
+    }
+
+    .scrollIndicator {
+        bottom: 1rem;
+    }
+}
+
+/* Pour les écrans très étroits */
+@media (max-width: 320px) {
+    .save, .date {
+        font-size: 5rem;
+    }
+
+    .the {
+        font-size: 2rem;
+        transform: translateY(-1rem);
+    }
+
+    .pourLeMariage {
+        font-size: 2.2rem;
+    }
+
+    .paragraphWedding {
+        font-size: 2.2rem;
+        line-height: 0.5;
+    }
+
+    .paragraphWedding:nth-child(2) {
+        font-size: 2.7rem;
+    }
+
+    .weddingDate, .location {
+        font-size: 2rem;
+    }
+}

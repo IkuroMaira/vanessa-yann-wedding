@@ -1,0 +1,63 @@
+.invitSection {
+    background-color: var(--color-background);
+    /*padding: 4rem 2rem;*/
+}
+
+.invitContainer {
+    min-width: 100vw;
+    min-height: 70vh;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-background);
+    /*padding: 4rem 2rem;*/
+}
+
+.invitText {
+    max-width: 70%;
+    font-family: "Playfair Display", serif;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    color: var(--color-text-dark);
+}
+
+.formReminderBox {
+    border: solid var(--color-primary) 3px;
+    color: var(--color-primary);
+    padding: 1.5rem;
+    border-radius: 8px;
+    width: 50%;
+    font-family: "Playfair Display", serif;
+    font-size: 1.2rem;
+    margin-top: 3rem;
+    box-shadow: var(--shadow-medium);
+}
+
+@media (min-width: 768px) {
+    .sectionText {
+        font-size: 1.5rem;
+    }
+
+    .formReminderBox {
+        font-size: 1.5rem;
+        padding: 2rem;
+    }
+}
+
+@media (min-width: 320px) {
+    .sectionText {
+        font-size: 1rem;
+    }
+
+    .formReminderBox {
+        font-size: 1rem;
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

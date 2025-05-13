@@ -1,0 +1,19 @@
+.acknowledgmentContainer {
+    background: url('../../assets/background/Setoftenderwatercolorlavenderflowerelementsisolatedonwhitebackground.png') no-repeat center center;
+    background-size: cover;
+    width: 100vw;
+    height: 50vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.acknowledgmentParagraph {
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 8px;
+    background-color: rgba(250, 249, 249, 0.94);
+    color: var(--color-primary);
+}

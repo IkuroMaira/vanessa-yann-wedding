@@ -1,43 +1,91 @@
-# Vanessa & Yann - Site de Mariage | Wedding Website
+# Vanessa & Yann - Site de Mariage / Wedding Website
 
-## À propos | About
+## 🇫🇷 Version Française
 
-Site web bilingue créé pour célébrer le mariage de Vanessa et Yann. Ce projet se déploie en trois phases principales, offrant une expérience interactive aux invités.
+### À propos
 
-Bilingual website created to celebrate Vanessa and Yann's wedding. This project unfolds in three main phases, offering an interactive experience to guests.
+Site web bilingue créé pour célébrer le mariage de Vanessa et Yann. Ce projet se déploie en trois phases principales.
 
-## Fonctionnalités | Features
+Vous pouvez voir le site en ligne [ici](https://yannessa.fr/).
 
-### Phase 1 - Save the Date
+### Fonctionnalités
+
+#### Phase 1 - Save the Date
 - Page d'annonce interactive avec animations JavaScript
 - Choix de la langue (français/anglais)
 - Design responsive pour tous les appareils
 
-### Phase 2 - Informations | Information
+#### Phase 2 - Informations
 - Détails sur la cérémonie et la réception
 - Plan d'accès interactif
 - Hébergements recommandés
 - Programme détaillé
 
-### Phase 3 - Galerie Photos | Photo Gallery
-- Galerie photo du mariage
+#### Phase 3 - Galerie Photos
+- Lien vers la galerie photo du photographe
 - Interface intuitive
-- Optimisation des images pour le web
 
-## Technologies Utilisées | Technologies Used
+### Technologies Utilisées
 
 - HTML5
 - CSS3
 - JavaScript
+- React
 - Git/GitHub
 
-## Structure du Projet | Project Structure
+### Structure du Projet
 
-## Contribution
+### Contribution
 Ce projet étant un site de mariage personnel, les contributions externes ne sont pas ouvertes. Cependant, n'hésitez pas à vous inspirer du code pour vos propres projets.
 
-## Contact
+### Contact
 Pour toute question concernant ce projet, vous pouvez me contacter via gwen.bussac@gmail.com.
 
-## Licence
+### Licence
 Ce projet est privé et n'est pas ouvert à la reproduction sans autorisation.
+
+
+---
+
+## 🇬🇧 English Version
+
+### About
+
+Bilingual website created to celebrate Vanessa and Yann's wedding. This project unfolds in three main phases.
+You can view the site online [here](https://yannessa.fr/).
+
+### Features
+
+#### Phase 1 - Save the Date
+- Interactive announcement page with JavaScript animations
+- Language selection (French/English)
+- Responsive design for all devices
+
+#### Phase 2 - Information
+- Details about the ceremony and reception
+- Interactive access map
+- Recommended accommodations
+- Detailed program
+
+#### Phase 3 - Photo Gallery
+- Link to the photographer's photo gallery
+- Intuitive interface
+
+### Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
+- React
+- Git/GitHub
+
+### Project Structure
+
+### Contribution
+As this is a personal wedding website, external contributions are not open. However, feel free to draw inspiration from the code for your own projects.
+
+### Contact
+For any questions regarding this project, you can contact me at gwen.bussac@gmail.com.
+
+### License
+This project is private and is not open for reproduction without authorization.

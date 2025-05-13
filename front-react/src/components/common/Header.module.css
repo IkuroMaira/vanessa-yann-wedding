@@ -1,0 +1,140 @@
+.header {
+    background-color: var(--color-header-light);
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    width: 100vw;
+    padding: 0.8em 0.5rem; /* Padding initial plus grand */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: all 0.3s ease; /* Transition pour tous les changements */
+}
+
+.headerScrolled {
+    background-color: var(--color-background-transparent-header);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    padding: 0.4em 0.5em; /* Padding réduit quand scrollé */
+}
+
+.headerContainer {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    position: relative;
+}
+
+.headerContent {
+    height: 3rem; /* Hauteur initiale */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: height 0.3s ease; /* Transition pour la hauteur */
+}
+
+.headerScrolled .headerContent {
+    height: 2.5rem; /* Hauteur réduite quand scrollé */
+}
+
+.leftSection {
+    display: flex;
+    align-items: center;
+}
+
+.rightSection {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.iconContainer {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    transition: transform 0.3s ease; /* Transition pour la transformation */
+}
+
+.icon {
+    max-width: 50px;
+    max-height: 50px;
+    transition: transform 0.3s ease; /* Transition pour la taille de l'icône */
+}
+
+.headerScrolled .icon {
+    transform: scale(0.8); /* Réduction de taille de 20% */
+}
+
+.centerPlaceholder {
+    width: 50px;
+    visibility: hidden;
+    transition: width 0.3s ease; /* Transition pour la largeur */
+}
+
+.headerScrolled .centerPlaceholder {
+    width: 40px; /* Width réduite quand scrollé */
+}
+
+@media screen and (max-width: 639px) {
+    .headerContainer {
+        padding: 0 0.5rem;
+    }
+
+    .headerContent {
+        height: 3.5rem;
+    }
+
+    .timer {
+        font-size: 1rem;
+    }
+
+    .icon {
+        width: 36px;
+        height: 36px;
+    }
+
+    .langSwitch {
+        font-size: 0.875rem;
+    }
+
+    .rightSection {
+        gap: 0.5rem;
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+    .headerContainer {
+        padding: 0 1.5rem;
+    }
+
+    .icon {
+        width: 42px;
+        height: 42px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .headerContainer {
+        padding: 0 2rem;
+    }
+
+    .langSwitch {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 359px) {
+    .timer {
+        font-size: 0.875rem;
+    }
+
+    .icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .leftSection {
+        max-width: 40%;
+    }
+}

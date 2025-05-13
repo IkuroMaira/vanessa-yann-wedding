@@ -1,0 +1,44 @@
+.polaroidContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FCF5EB;
+
+    width: 100%;
+    padding: 2rem;
+    transform: none;
+    height: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.polaroid {
+    background: white;
+    padding: 1rem 1rem 3rem 1rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18);
+    /*transition: transform 0.3s ease;*/
+    transition: all 0.3s ease;
+    animation: float 4s ease-in-out infinite;
+}
+
+.polaroid img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform; /* Optimisation des performances */
+}
+
+.polaroid:hover {
+    transform: scale(1.03) rotate(2deg);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    z-index: 3;
+}
+
+.polaroid {
+    position: relative;
+    z-index: 3;
+}
