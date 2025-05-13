@@ -19,13 +19,17 @@ function HomeLayout() {
                     <HeroSection />
                 </Element>
 
-                <Polaroid />
+                <Element>
+                    <Polaroid />
+                </Element>
 
                 <Element name="invit-section">
                     <InvitationSection />
                 </Element>
 
-                <Polaroid />
+                <Element>
+                    <Polaroid />
+                </Element>
 
                 <Element name="info-section">
                     <InfoSection />
@@ -35,7 +39,9 @@ function HomeLayout() {
                     <WeddingMap />
                 </Element>
 
-                <Polaroid />
+                <Element>
+                    <Polaroid />
+                </Element>
 
                 <Element name="acknowledgment">
                     <AcknowledgmentSection />

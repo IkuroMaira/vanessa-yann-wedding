@@ -6,16 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="c8e46d5a-ccbe-4a53-9ba3-b09184968cfe" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-react/src/components/common/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/src/components/common/Header.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-react/src/components/common/Navigation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/src/components/common/Navigation.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-react/src/components/sections/HeroSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/src/components/sections/HeroSection.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-react/src/components/sections/HeroSection.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/src/components/sections/HeroSection.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-react/src/components/sections/InfoSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/src/components/sections/InfoSection.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-react/src/components/sections/InfoSection.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/src/components/sections/InfoSection.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-react/src/components/sections/WeddingMap.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/src/components/sections/WeddingMap.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-react/src/components/sections/WeddingMap.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/src/components/sections/WeddingMap.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-react/src/datas/languages/translations.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/src/datas/languages/translations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-react/src/index.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-react/src/layouts/HomeLayout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/src/layouts/HomeLayout.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-react/src/styles/variables.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/src/styles/variables.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-react/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/src/main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-react/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/vite.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +35,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/front-react/dist/assets/css/index-DghHvVRm.css" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -48,25 +49,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Node.js.timer.js.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/gwenaellebussac/Sites/Sites professionnels/vanessa-yann-wedding/front-react/src/datas/languages&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Node.js.timer.js.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "dev",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "/Users/gwenaellebussac/Sites/Sites professionnels/vanessa-yann-wedding/front-react/src/datas/languages",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/front-react/src/datas/languages" />
@@ -113,6 +115,11 @@
       <workItem from="1745852351012" duration="27285000" />
       <workItem from="1745919569166" duration="15803000" />
       <workItem from="1746009092138" duration="149000" />
+      <workItem from="1746129454919" duration="11841000" />
+      <workItem from="1746372925353" duration="5312000" />
+      <workItem from="1746380418961" duration="2979000" />
+      <workItem from="1747080393924" duration="31000" />
+      <workItem from="1747166458638" duration="1823000" />
     </task>
     <servers />
   </component>

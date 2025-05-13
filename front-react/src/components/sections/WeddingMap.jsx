@@ -9,32 +9,37 @@ export default function WeddingMap() {
     return (
         <div className={styles.mapContainer}>
             <h2 className={styles.mapTitle}>
-                {translations[language][0].mapSection?.title || "Lieux du mariage"}
+                {translations[language][0].mapText.mapTitle}
             </h2>
 
             <div className={styles.mapsContainer}>
                 <div className={styles.infoLocationContainer}>
-                    <h3 className={styles.locationTitle}>
-                        Mairie de Bouc Bel Air : Rue de l'Hôtel de ville, 13320 Bouc-Bel-Air
-                        <span>{translations[language][0].mapSection?.ceremonyInfo || "Cérémonie civile"}</span>
-                        <span>{translations[language][0].mapSection?.scheduleCeremonyInfo || "26/07/2025 à 14h30 (30 min)"}</span>
-                    </h3>
+                    <div className={styles.locationTitle}>
+                        {translations[language][0].mapText.locationTitle}
+                    </div>
 
-                    <h3 className={styles.locationTitle}>
-                        Pavillon d'Aurabelle, 04800 Gréoux-les-Bains
-                        <span>{translations[language][0].mapSection?.weddindLocationInfo || "Lieu du mariage"}</span>
-                        <span>{translations[language][0].mapSection?.scheduleVenueInfo || "Du 26/07/2025 (17h) au 27/07/2025 (3h)"}</span>
+                    <h3 className={styles.ceremonyTitle}>
+                        {translations[language][0].mapText.ceremonyLocation}
                     </h3>
+                    <p><span>{translations[language][0].mapText.ceromonyText}</span></p>
+                    <p><span>{translations[language][0].mapText.ceremonyLocation}</span></p>
 
-                    <h3 className={styles.locationTitle}>
-                        Transport Facilities
-                        Marignane International Airport
-                        Aix-En-Provence TGV Train Station
-                        Car rental options
-                        Both the train station and the airport provide a variety of
-                        rental options
-                        <span>{translations[language][0].mapSection?.weddindLocationInfo || "Transport"}</span>
+                    <h3 className={styles.venueTitle}>
+                        {translations[language][0].mapText.weddingLocaton}
                     </h3>
+                    <p><span>{translations[language][0].mapText.weddingLocationText}</span></p>
+                    <p><span>{translations[language][0].mapText.scheduleVenueInfo}</span></p>
+
+                    <h3 className={styles.transportTitle}>
+                        <span>{translations[language][0].mapText.transportTitle}</span>
+                    </h3>
+                    <p>{translations[language][0].mapText.airport}</p>
+                    <p>{translations[language][0].mapText.TGV}</p>
+
+                    <h3 className={styles.carTitle}>
+                        <span>{translations[language][0].mapText.carTitle}</span>
+                    </h3>
+                    <p>{translations[language][0].mapText.carText}</p>
                 </div>
 
                 <div className={styles.mapWrapper}>
