@@ -1,3 +1,6 @@
+import styles from "../../components/sections/InfoSection.module.css";
+import React from "react";
+
 export const translations = {
     en: [
         {
@@ -46,8 +49,24 @@ export const translations = {
                 TGV: "Gare Aix-En-Provence TGV",
                 carTitle: "Option location de voiture",
                 carText: "La gare et l'aéroport offrent de nombreuses possibilités de location."
-            }
+            },
+            info: {
+            titleProgramme: "Le programme",
+            planningLine1: "15h00 : Rendez-vous à la mairie",
+            planningLine2: "15h40 : Départ pour le Pavillon d’Aurabelle",
+            planningLine3: "(environ 1h de route)",
+            planningLine4: "16h30 : Arrivée au Pavillon",
+            planningLine5: "17h30 : Cérémonie franco-indienne",
+            planningLine6: "20h00 : Début de la soirée",
+            planningLine7: "21h00 : Dîner",
+            planningLine8: "(Les enfants pourront être servis plus tôt)",
+            merci: "Merci de prévoir deux tenues : une pour les cérémonies et une pour la soirée. Aucune couleur spécifique n'est demandée (sauf pour les témoins).",
+            brunch: "Le brunch au pavillon d'Aurabelle tout comme le logement est compris et gratuit - (chambre de 6 personnes avec toilettes et salle de bain ).",
+            contact: "Merci de nous contacter pour que nous puissions vous aider si vous n'êtes pas véhiculés ou pour toutes autres questions.",
+            },
+            thank: "Nous vous remercions de partager notre bonheur, que ce soit par votre présence ou à travers vos vœux chaleureux, en ce jour si important.",
         },
+
     ],
     fr: [
         {
@@ -96,7 +115,22 @@ export const translations = {
                 TGV: "Aix-En-Provence TGV Train Station",
                 carTitle: "Car rental options",
                 carText: "Both the train station and the airport provide a variety of rental options"
-            }
+            },
+            info: {
+                titleProgramme: "The Schedule",
+                planningLine1: "3:00 PM: Meeting at the town hall",
+                planningLine2: "3:40 PM: Departure for Pavillon d'Aurabelle",
+                planningLine3: "(approximately 1 hour drive)",
+                planningLine4: "4:30 PM: Arrival at the Pavillon",
+                planningLine5: "5:30 PM: Franco-Indian ceremony",
+                planningLine6: "8:00 PM: Evening celebration begins",
+                planningLine7: "9:00 PM: Dinner",
+                planningLine8: "(Children can be served earlier)",
+                merci: "Please prepare two outfits: one for the ceremonies and one for the evening. No specific colors are required (except for the witnesses).",
+                brunch: "The brunch at Pavillon d'Aurabelle as well as accommodation is included and free - (room for 6 people with toilet and bathroom).",
+                contact: "Please contact us so we can help you if you don't have transportation or for any other questions.",
+            },
+            thank: "We thank you for sharing our happiness, whether through your presence or through your warm wishes, on this very important day.",
         },
     ]
 };

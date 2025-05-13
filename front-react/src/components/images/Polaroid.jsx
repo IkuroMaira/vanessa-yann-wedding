@@ -1,13 +1,32 @@
 import React from "react";
 import styles from './Polaroid.module.css';
-import imgCouple from "../../assets/photos/couple-stare.jpg"
+import { ParallaxProvider, Parallax} from "react-scroll-parallax";
 
-export default function Polaroid() {
+export default function Polaroid({ imageSrc, alt, variant = 'first', parallaxProps = {} }) {
+    const getPolaroidClass = () => {
+        switch(variant) {
+            case 'first':
+                return styles.polaroidFirst;
+            case 'second':
+                return styles.polaroidSecond;
+            case 'third':
+                return styles.polaroidThird;
+            default:
+                return styles.polaroidFirst;
+        }
+    };
+
     return (
-        <div className={styles.polaroidContainer}>
-            <div className={styles.polaroid}>
-                <img src={imgCouple} alt="Photo des fiancés 1"/>
+        <ParallaxProvider>
+            <div className={styles.polaroidContainer}>
+                <Parallax {...parallaxProps}>
+                    <div className={getPolaroidClass()}>
+                        <div className={styles.imageContainer}>
+                            <img src={imageSrc} alt={alt} />
+                        </div>
+                    </div>
+                </Parallax>
             </div>
-        </div>
+        </ParallaxProvider>
     )
 }

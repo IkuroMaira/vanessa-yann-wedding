@@ -8,6 +8,9 @@ import InfoSection from "../components/sections/InfoSection.jsx";
 import WeddingMap from "../components/sections/WeddingMap.jsx";
 import AcknowledgmentSection from "../components/sections/AcknowledgmentSection.jsx";
 import Polaroid from "../components/images/Polaroid.jsx";
+import imgCouple1 from "../assets/photos/couple-stare.jpg";
+import imgCouple2 from '../assets/photos/couple-vue-NB.png';
+import imgCouple3 from '../assets/photos/2022-couple-NB.png';
 
 function HomeLayout() {
     return (
@@ -20,7 +23,12 @@ function HomeLayout() {
                 </Element>
 
                 <Element>
-                    <Polaroid />
+                    <Polaroid
+                        imageSrc={imgCouple1}
+                        alt="Photo de couple"
+                        variant="first"
+                        parallaxProps={{ rotate: [-3, 3] }}
+                    />
                 </Element>
 
                 <Element name="invit-section">
@@ -28,7 +36,12 @@ function HomeLayout() {
                 </Element>
 
                 <Element>
-                    <Polaroid />
+                    <Polaroid
+                        imageSrc={imgCouple2}
+                        alt="Photo de couple"
+                        variant="second"
+                        parallaxProps={{ rotate: [1, -1] }}
+                    />
                 </Element>
 
                 <Element name="info-section">
@@ -40,7 +53,12 @@ function HomeLayout() {
                 </Element>
 
                 <Element>
-                    <Polaroid />
+                    <Polaroid
+                        imageSrc={imgCouple3}
+                        alt="Photo de couple"
+                        variant="third"
+                        parallaxProps={{ rotate: [-2, 2] }}
+                    />
                 </Element>
 
                 <Element name="acknowledgment">

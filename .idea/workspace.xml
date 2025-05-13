@@ -6,14 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="c8e46d5a-ccbe-4a53-9ba3-b09184968cfe" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-react/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-react/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-react/src/components/images/Polaroid.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/src/components/images/Polaroid.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-react/src/components/images/Polaroid.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/src/components/images/Polaroid.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-react/src/components/sections/AcknowledgmentSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/src/components/sections/AcknowledgmentSection.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-react/src/components/sections/HeroSection.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/src/components/sections/HeroSection.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-react/src/components/sections/InfoSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/src/components/sections/InfoSection.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-react/src/components/sections/InfoSection.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/src/components/sections/InfoSection.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-react/src/components/sections/WeddingMap.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/src/components/sections/WeddingMap.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-react/src/components/sections/WeddingMap.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/src/components/sections/WeddingMap.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-react/src/datas/languages/translations.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/src/datas/languages/translations.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-react/src/index.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-react/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-react/src/layouts/HomeLayout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/src/layouts/HomeLayout.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-react/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/src/main.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-react/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/vite.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-react/src/layouts/HomeLayout.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/src/layouts/HomeLayout.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +68,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
   }
@@ -119,7 +123,8 @@
       <workItem from="1746372925353" duration="5312000" />
       <workItem from="1746380418961" duration="2979000" />
       <workItem from="1747080393924" duration="31000" />
-      <workItem from="1747166458638" duration="1823000" />
+      <workItem from="1747166458638" duration="5795000" />
+      <workItem from="1747172307622" duration="7983000" />
     </task>
     <servers />
   </component>
