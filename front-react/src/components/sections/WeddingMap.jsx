@@ -2,6 +2,8 @@ import React from "react";
 import { useLanguage } from "../../contexts/LanguageContext";
 import { translations } from "../../datas/languages/translations";
 import styles from "./WeddingMap.module.css";
+import iconPlane from  "../../assets/icons/icons8-plane-64.png";
+import iconTrain from '../../assets/icons/icons8-train-48.png';
 
 export default function WeddingMap() {
     const { language } = useLanguage();
@@ -33,8 +35,16 @@ export default function WeddingMap() {
                     <h3 className={styles.transportTitle}>
                         <span>{translations[language][0].mapText.transportTitle}</span>
                     </h3>
-                    <p>{translations[language][0].mapText.airport}</p>
-                    <p>{translations[language][0].mapText.TGV}</p>
+
+                    <div className={styles.transportContainer}>
+                        <img src={iconPlane} className={styles.icon} />
+                        <p className={styles.textTransport}>{translations[language][0].mapText.airport}</p>
+                    </div>
+
+                    <div className={styles.transportContainer}>
+                        <img src={iconTrain} className={styles.icon}/>
+                        <p className={styles.textTransport}>{translations[language][0].mapText.TGV}</p>
+                    </div>
 
                     <h3 className={styles.carTitle}>
                         <span>{translations[language][0].mapText.carTitle}</span>
