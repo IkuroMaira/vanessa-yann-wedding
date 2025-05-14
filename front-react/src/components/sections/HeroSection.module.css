@@ -239,7 +239,7 @@
 
     .heroContainer {
         /* Utiliser une hauteur fixe mais soustraire la hauteur du header */
-        height: 200vh;
+        height: 170vh;
         margin-top: var(--header-height, 4.6rem);
     }
 
