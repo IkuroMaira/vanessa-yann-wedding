@@ -19,6 +19,10 @@ jobs:
       contents: read
       packages: write
 
+    defaults:
+      run:
+        working-directory: front-react
+
     steps:
       - uses: actions/checkout@v4
       - name: Log in to the Container registry
