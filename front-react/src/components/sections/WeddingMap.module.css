@@ -98,7 +98,7 @@
     font-family: "Playfair Display", serif;
     color: var(--color-text-dark);
     font-size: 0.95rem;
-    line-height: 1.5;
+    /*line-height: 1.5;*/
     margin-bottom: 0.75rem;
 }
 
@@ -121,6 +121,20 @@
     width: 100%;
     height: 100%;
     min-height: 400px;
+}
+
+.transportContainer {
+    display: flex;
+}
+
+.icon {
+    width: 35px;
+    margin: 0 0.5rem;
+}
+
+.textTransport {
+    display: flex;
+    align-items: center;
 }
 
 /* Pour les écrans moyens et grands */

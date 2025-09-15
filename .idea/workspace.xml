@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c8e46d5a-ccbe-4a53-9ba3-b09184968cfe" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-react/src/components/sections/HeroSection.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/src/components/sections/HeroSection.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-react/src/components/sections/WeddingMap.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/src/components/sections/WeddingMap.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-react/src/components/sections/WeddingMap.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/front-react/src/components/sections/WeddingMap.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +114,7 @@
       <workItem from="1746380418961" duration="2979000" />
       <workItem from="1747080393924" duration="31000" />
       <workItem from="1747166458638" duration="5795000" />
-      <workItem from="1747172307622" duration="9158000" />
+      <workItem from="1747172307622" duration="11277000" />
     </task>
     <servers />
   </component>
