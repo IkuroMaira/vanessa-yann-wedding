@@ -6,7 +6,8 @@
 
 Site web bilingue créé pour célébrer le mariage de Vanessa et Yann. Ce projet se déploie en trois phases principales.
 
-Vous pouvez voir le site en ligne [ici](https://yannessa.fr/).
+Vous pouvez voir le site en ligne [ici le site en ligne](https://yannessa.fr/).
+Et ici le Figma où j'ai conçu la maquette: [ici les maquettes](https://www.figma.com/design/pzySm6OVlc1OQJFy5PXxhn/Site-pour-Vanessa-et-Yann?node-id=0-1&t=2szk8HrTyLxtAr0x-1)
 
 ### Fonctionnalités
 
